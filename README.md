@@ -31,8 +31,7 @@ A **professional, user-friendly, and colorful Bash script** to automate SQL inje
 
 1. Clone the repository or copy the script to your system:
     ```bash
-    git clone https://github.com/shaid69/Advanced-SQLMap-Automation.git
-    cd Advanced-SQLMap-Automation
+    git clone https://github.com/shaid69/sqlmap_automation.sh.git
     ```
 
 2. Make the script executable:
